@@ -12,10 +12,42 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
-    <string name="userName">Username</string>
-    <string name="person1"> person1</string>
-    <string name="person2">person2</string>
+    <string-array name="userNpass">
+        <item>jdoe:welcome1</item>
+    </string-array>
 
+    <string name="person1"> Person1</string>
+    <string name="person2">Person2</string>
+    <string name="new_customer">New Customer</string>
+    <string name="person4">Person4</string>
+    <string name="person3">Person3</string>
+    <string name="profilepic">profilePic</string>
+    <string name="take_pic">Take Pic</string>
+    <string name="session_1">Session 1</string>
+    <string name="new_session">NEW SESSION</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">Date</string>
+    <string name="slash">/</string>
+    <string name="time">Time</string>
+    <string name="colon_time">:</string>
+    <string name="card_number">Card Number</string>
+    <string name="exp_date">Exp Date</string>
+    <string name="address_label">Address</string>
+    <string name="city_label">City</string>
+    <string name="state_label">State</string>
+    <string name="zip">Zip</string>
+    <string name="submitNewSessionButton">Submit</string>
+    <string name="receipt_text">
+        Your transaction is complete! You can print or email the receipt to yourself.
+        \n\nCard number:
+        \nBilling Address:
+
+    </string>
+    <string name="print">Print</string>
+    <string name="email">Email</string>
+    <string name="receipt">Receipt</string>
 
 
 </resources>

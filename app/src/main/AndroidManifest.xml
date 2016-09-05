@@ -18,18 +18,27 @@
         android:label="@string/app_name"
         android:logo="@drawable/app_gym_grey"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/GoHardTheme">
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2"
-            android:label="MainActivity">
-
+        <activity
+            android:name=".MainActivity2"
+            android:label="Clients">
+        </activity>
+        <activity
+            android:name=".PersonActivity"
+            android:label="Person1">
+        </activity>
+        <activity android:name=".NewSessionActivity">
+        </activity>
+        <activity android:name=".ReceiptActivity">
         </activity>
     </application>
 

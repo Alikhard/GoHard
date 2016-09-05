@@ -4,21 +4,22 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class NewSessionActivity extends AppCompatActivity {
 
-    TextView person1;
+    Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_session);
 
-        person1 = (TextView)findViewById(R.id.person1);
-        person1.setOnClickListener(new View.OnClickListener() {
+        submitBtn = (Button)findViewById(R.id.newSessionBtnSub);
+        submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(MainActivity2.this, PersonActivity.class);
+                Intent in = new Intent(NewSessionActivity.this, ReceiptActivity.class);
                 startActivity(in);
             }
         });

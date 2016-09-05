@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "jdoe:welcome1", "bar@example.com:world"
     };
+    private String[] credentials = getResources().getStringArray(R.array.userNpass);
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -316,7 +317,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 return false;
             }
 
-            for (String credential : DUMMY_CREDENTIALS) {
+            for (String credential : credentials) {
                 String[] pieces = credential.split(":");
                 if (pieces[0].equals(mEmail)) {
                     // Account exists, return true if the password matches.

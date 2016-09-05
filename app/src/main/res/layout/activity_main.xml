@@ -9,37 +9,88 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bignerdranch.android.gohard.MainActivity2"
-    android:background="#dbd9d9">
+    android:background="#dbd9d9"
+    android:orientation="vertical"
+    android:id="@+id/mainScreen">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:id="@+id/newCustomer">
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_customer"
+            android:id="@+id/customerButton"
+            android:clickable="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:background="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:id="@+id/customerList">
+
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/person1"
-            android:inputType="text"
-            android:hint="@string/person1"
-            android:paddingRight="40dp"
+            android:paddingRight="0dp"
             android:paddingLeft="10dp"
             android:textSize="30sp"
             android:textStyle="bold"
             android:typeface="normal"
-            />
+            android:padding="20dp"
+            android:text="@string/person1"
+            android:textColor="#000000"
+            android:textColorHighlight="#2dfd19"/>
 
-        <EditText
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/person2"
-            android:inputType="text"
-            android:hint="@string/person2"
-            android:paddingRight="40dp"
+            android:paddingRight="0dp"
             android:paddingLeft="10dp"
             android:textStyle="bold"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:text="@string/person2"
+            android:textIsSelectable="false"
+            android:textColorHighlight="#2dfd19"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/person4"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:textSize="30sp"
+            android:textColorHighlight="#2dfd19"
+            android:textColor="#000000"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/person3"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:textColorHighlight="#2dfd19"
+        android:textColor="#000000"/>
+
 </LinearLayout>
