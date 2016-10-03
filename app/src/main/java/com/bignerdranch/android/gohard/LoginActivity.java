@@ -3,6 +3,9 @@ package com.bignerdranch.android.gohard;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -50,7 +53,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "jdoe:welcome1", "bar@example.com:world"
+            String.valueOf(R.array.userNpass)
+            //"jdoe:welcome1", "bar@example.com:world"
     };
     private String[] credentials = getResources().getStringArray(R.array.userNpass);
     /**
@@ -94,6 +98,19 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+
+
+    }
+
+    private void selectFrag (View view){
+
+        Fragment fr = new dataFragment();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.login, fr);
+        ft.commit();
+
     }
 
     private void populateAutoComplete() {

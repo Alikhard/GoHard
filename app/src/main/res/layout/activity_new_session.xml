@@ -10,6 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bignerdranch.android.gohard.NewSessionActivity">
 
+    <fragment
+        tools:layout="@layout/fragment_data"
+        android:name="com.bignerdranch.android.gohard.dataFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/topNewSessionLabel"
+        android:layout_alignEnd="@+id/topNewSessionLabel" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,7 +29,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="#505050"
-        android:id="@+id/topNewSessionLabel">
+        android:id="@+id/topNewSessionLabel"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,6 +44,7 @@
             android:textSize="30sp"
             android:gravity="center"
             android:layout_marginLeft="10dp"/>
+
     </LinearLayout>
 
     <TableLayout

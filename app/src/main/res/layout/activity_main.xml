@@ -13,6 +13,14 @@
     android:orientation="vertical"
     android:id="@+id/mainScreen">
 
+    <fragment
+    android:name="com.bignerdranch.android.gohard.dataFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/FragName"
+    android:layout_gravity="right"
+    tools:layout="@layout/fragment_data" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"

@@ -1,5 +1,8 @@
 package com.bignerdranch.android.gohard;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity {
 
     TextView person1;
+    Fragment logIn = new dataFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,4 +28,13 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
     }
+    /*private void selectFrag (View view){
+
+        Fragment fr = new dataFragment();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.email, fr);
+        ft.commit();
+
+    }*/
 }

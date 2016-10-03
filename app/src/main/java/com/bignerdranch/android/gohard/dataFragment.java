@@ -3,7 +3,7 @@ package com.bignerdranch.android.gohard;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +64,10 @@ public class dataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        //Get referrences to any UI components
+        //Bind any data to it
+        //If this fragment has no UI then return null
+
         return inflater.inflate(R.layout.fragment_data, container, false);
     }
 
