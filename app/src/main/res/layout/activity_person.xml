@@ -94,7 +94,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="294dp"
         android:paddingTop="25dp">
 
         <TableLayout
@@ -123,5 +123,20 @@
             </TableRow>
 
         </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginBottom="-50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btLogOff"
+            android:id="@+id/button"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp" />
     </LinearLayout>
 </LinearLayout>
